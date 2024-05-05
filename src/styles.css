@@ -1,0 +1,48 @@
+ @tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+	.app-tile {
+		/*size-[calc(clamp(0.5rem,calc(100vw/5),4rem)-9px)]*/
+		@apply flex aspect-square size-tile  flex-col items-center justify-center bg-surface-200 p-0.5 focus-visible:rounded-lg sm:p-2 dark:bg-surface-700;
+	}
+
+	.app-h1 {
+		@apply text-xl font-medium text-surface-950 dark:text-surface-50 size-tile;
+	}
+
+	.app-btn-ghost {
+		@apply bg-surface-300 bg-opacity-0 hover:bg-opacity-75 dark:bg-surface-700 dark:bg-opacity-0;
+	}
+
+	.app-btn-primary {
+		@apply bg-primary-solid text-white hover:bg-primary-light
+	}
+/* 
+	.app-btn-secondary {
+		@apply bg-primary-200 text-primary-solid hover:bg-primary-light
+	} */
+}
+
+@layer utilities {
+	.app-text-emphase-1 {
+		@apply text-surface-950 dark:text-surface-50;
+	}
+
+	.app-text-emphase-2 {
+		@apply text-surface-900 dark:text-surface-100;
+	}
+
+	.app-text-emphase-3 {
+		@apply text-surface-800 dark:text-surface-200;
+	}
+
+	.app-gap-grid {
+		@apply gap-0.5;
+	}
+}
+
+.lucide {
+	@apply size-6 stroke-[2.1] text-surface-800 dark:text-surface-200 text-inherit;
+}
