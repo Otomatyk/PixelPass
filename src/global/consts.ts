@@ -1,4 +1,4 @@
-import type { Color } from "./types";
+import type { Color } from "./types"
 
 export const COLOR_PALETTE: Color[] = [
 	{ id: 0, value: "#dc2626" }, // Red
@@ -16,9 +16,16 @@ export const COLOR_PALETTE: Color[] = [
 	{ id: 12, value: "#64748b" }, // Light gray
 	{ id: 13, value: "#1e293b" }, // Dark gray
 	{ id: 14, value: "#020617" }, // Black
-];
+]
 
 export const GRID = {
 	width: 5,
 	height: 5,
-};
+}
+
+export const TOAST_CONFIG = {
+	style: "border-radius: 0px; font-weight: 500;",
+	duration: 2500,
+}
+
+export const MIN_COLOR_FOR_DRAWING = 2

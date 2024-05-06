@@ -1,0 +1,68 @@
+{
+	"$schema": "https://biomejs.dev/schemas/1.7.1/schema.json",
+	"organizeImports": {
+		"enabled": true
+	},
+
+	"formatter": {
+		"indentWidth": 4,
+		"indentStyle": "tab"
+	},
+
+	"javascript": {
+		"formatter": {
+			"semicolons": "asNeeded",
+			"arrowParentheses": "always",
+			"bracketSameLine": false
+		}
+	},
+
+	"linter": {
+		"enabled": true,
+		"rules": {
+			"recommended": true,
+			"complexity": {
+				"noExcessiveCognitiveComplexity": {
+					"level": "warn",
+					"options": {
+						"maxAllowedComplexity": 21
+					}
+				},
+
+				"useArrowFunction": "error"
+			},
+
+			"suspicious": {
+				"noConsoleLog": "warn"
+			},
+
+			"correctness": {
+				"useHookAtTopLevel": "error"
+			},
+
+			"style": {
+				"useConsistentArrayType": {
+					"level": "error",
+					"options": {
+						"syntax": "shorthand"
+					}
+				},
+
+				"useFilenamingConvention": {
+					"level": "error",
+					"options": {
+						"filenameCases": ["export", "snake_case"]
+					}
+				},
+
+				"useForOf": "error",
+
+				"useShorthandAssign": "error"
+			},
+
+			"a11y": {
+				"useButtonType": "off"
+			}
+		}
+	}
+}

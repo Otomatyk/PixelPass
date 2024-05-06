@@ -24,9 +24,17 @@
 		},
 		"windows": [
 			{
-				"title": "pixelpass",
-				"width": 800,
-				"height": 600
+				"title": "Pixel Pass",
+
+				"width": 400,
+				"height": 800,
+				"maxHeight": 1000,
+				"maxWidth": 600,
+
+				"decorations": true,
+				"focus": true,
+				"alwaysOnTop": true,
+				"maximizable": false
 			}
 		],
 		"security": {

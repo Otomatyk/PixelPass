@@ -1,4 +1,4 @@
-import colors from "tailwindcss/colors";
+import colors from "tailwindcss/colors"
 
 /** @type {import('tailwindcss').Config} */
 export default {
@@ -7,15 +7,17 @@ export default {
 
 	theme: {
 		screens: {
-			sm: "200px",
+			xss: "150px",
+			xs: "200px",
+			sm: "260px",
 			md: "300px",
 		},
 
 		extend: {
 			colors: {
 				primary: {
-					solid: colors.indigo[700],
-					light: colors.indigo[500],
+					solid: colors.slate[800],
+					light: colors.slate[500],
 				},
 
 				accent: colors.blue,
@@ -36,5 +38,5 @@ export default {
 		},
 	},
 
-	// plugins: [require("daisyui")],
-};
+	plugins: [require("@tailwindcss/forms")],
+}
